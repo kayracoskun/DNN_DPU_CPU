@@ -6,10 +6,11 @@ import cv2
 import matplotlib.pyplot as plt
 
 # Read image
-img = cv2.imread("SuperResolution/images/AI-Courses-By-OpenCV-Github.jpg")
+# img = cv2.imread("SuperResolution/images/AI-Courses-By-OpenCV-Github.jpg")
+img = cv2.imread("SuperResolution/images/kayra_bedirhan.png")
 
 # Cropout OpenCV logo
-img = img[:80,850:]
+# img = img[:80,850:]
 
 # EDSR
 sr_edsr = cv2.dnn_superres.DnnSuperResImpl_create()

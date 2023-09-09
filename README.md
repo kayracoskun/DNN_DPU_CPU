@@ -18,9 +18,8 @@ python
 import cv2
 print(cv2.__version__)
 ```
-To install OpenCV or upgrade the version:
+To install dependencies:
 
 ```
-pip install pip install opencv-contrib-python
-pip install opencv-contrib-python --upgrade
+pip install -r requirements.txt
 ```
