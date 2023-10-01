@@ -3,5 +3,7 @@ Deep Neural Network models, training and inference codes. Implementations on bot
 
 ### Semantic Segmentation
 DeepLabV3-Plus
+
 Original repo: https://github.com/lattice-ai/DeepLabV3-Plus
+
 Article: https://arxiv.org/pdf/1802.02611.pdf
