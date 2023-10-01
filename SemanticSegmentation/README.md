@@ -7,3 +7,5 @@ DeepLabV3-Plus
 Original repo: https://github.com/lattice-ai/DeepLabV3-Plus
 
 Article: https://arxiv.org/pdf/1802.02611.pdf
+
+Keras: https://keras.io/examples/vision/deeplabv3_plus/
