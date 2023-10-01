@@ -8,18 +8,5 @@ Four models are available for super resolution:
 - FSRCNN: https://github.com/Saafke/FSRCNN_Tensorflow
 - LapSRN: https://github.com/fannymonori/TF-LapSRN
 
-Dependencies:
-- matplotlib pyplot
-- opencv
-
-OpenCV version should be 4.3 and higher. To check OpenCV version:
-```
-python
-import cv2
-print(cv2.__version__)
-```
-To install dependencies:
-
-```
-pip install -r requirements.txt
-```
+### Semantic Segmentation
+- DeepLabV3-Plus: https://github.com/lattice-ai/DeepLabV3-Plus
