@@ -36,11 +36,17 @@ sr_lapsrn.readModel("SuperResolution/models/LapSRN/LapSRN_x4.pb")
 sr_lapsrn.setModel("lapsrn",4)
 result_lapsrn = sr_lapsrn.upsample(img)
 
+# LapSRN 
+sr_lapsrn_trained = cv2.dnn_superres.DnnSuperResImpl_create()
+sr_lapsrn_trained.readModel("SuperResolution/models/LapSRN/kefir_x4.pb")
+sr_lapsrn_trained.setModel("lapsrn",4)
+result_lapsrn_trained = sr_lapsrn_trained.upsample(img)
+
 # Resized image
 resized = cv2.resize(img,dsize=None,fx=4,fy=4)
 
 # Plot
-fig, axs = plt.subplots(2, 3, figsize=(12, 8))
+fig, axs = plt.subplots(3, 3, figsize=(12, 8))
 
 # Original image (LR)
 axs[0, 0].imshow(img[:,:,::-1])
@@ -65,6 +71,10 @@ axs[1, 1].set_title("FSRCNN upscaled")
 # LapSRN upscaled
 axs[1, 2].imshow(result_lapsrn[:,:,::-1])
 axs[1, 2].set_title("LapSRN upscaled")
+
+# LapSRN upscaled (trained)
+axs[2, 0].imshow(result_lapsrn_trained[:,:,::-1])
+axs[2, 0].set_title("LapSRN upscaled (trained)")
 
 plt.tight_layout()
 plt.show()
